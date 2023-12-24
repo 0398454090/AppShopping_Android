@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Quyền truy cập vào cơ sở dữ liệu -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Login_Register_fix"
+        tools:targetApi="31">
+        <activity
+            android:name=".product.FastfoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".product.DinnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".product.LunchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".product.BreakActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BottomNavBar.Wishlist"
+            android:exported="false" />
+        <activity
+            android:name=".BottomNavBar.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".BottomNavBar.Notification"
+            android:exported="false" />
+        <activity
+            android:name=".BottomNavBar.Edit_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Adapter.GioHangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".product.StationeryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".product.ClouthesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".product.DrinkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".product.FoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_application_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="15dp"
+    android:outlineSpotShadowColor="@color/black">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <ImageView
+            android:id="@+id/product_img"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:layout_margin="6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hambuger"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/product_Name"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Hambuger Flash Sale 20%"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/product_img"
+            app:layout_constraintTop_toTopOf="@+id/product_img" />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="30.000đ"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/product_img"
+            app:layout_constraintStart_toEndOf="@+id/product_img"
+            app:layout_constraintTop_toBottomOf="@+id/start" />
+
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="5.0"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/product_img"
+            app:layout_constraintTop_toBottomOf="@+id/product_Name" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:foregroundGravity="center"
+            android:padding="2dp"
+            android:src="@drawable/star"
+            app:layout_constraintBottom_toBottomOf="@+id/start"
+            app:layout_constraintStart_toEndOf="@+id/start"
+            app:layout_constraintTop_toTopOf="@+id/start" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
