@@ -33,7 +33,7 @@ public class StationeryAdapter extends RecyclerView.Adapter<StationeryAdapter.Vi
     @Override
     public StationeryAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_hoder_popular_list, parent, false);
-        return new ViewHolder(view);
+        return new StationeryAdapter.ViewHolder(view);
     }
 
     @Override
