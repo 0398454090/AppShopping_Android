@@ -2,6 +2,7 @@ package com.example.login_register_fix;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -86,24 +88,13 @@ public class CartActivity extends AppCompatActivity {
         btnOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Xóa toàn bộ dữ liệu trong Cart
-                DatabaseReference cartRef = FirebaseDatabase.getInstance().getReference("Cart");
-                cartRef.removeValue();
-
-                // Đặt trạng thái của btnCash và btnOtherPayment về false
-                isCash = false;
-                isOtherPayment = false;
-
-                // Đặt màu sắc cho btnCash và btnOtherPayment về mặc định
-                btnCash.setBackgroundTintList(getResources().getColorStateList(R.color.grey));
-                btnOtherPayment.setBackgroundTintList(getResources().getColorStateList(R.color.grey));
-
-
-                Toast.makeText(CartActivity.this, "Đặt hàng thành công", Toast.LENGTH_SHORT).show();
-                // Gọi hàm để làm mới và cập nhật giao diện
-                resetUI();
+                // Hiển thị dialog xác nhận trước khi đặt hàng
+                showConfirmationDialog();
             }
         });
+
+
+
 
 
         //btnBack
@@ -247,6 +238,75 @@ public class CartActivity extends AppCompatActivity {
         txtTotalAll.setText("0");
         // Cập nhật giao diện Recyclerview
         initCartMenu();
+    }
+    // Hàm hiển thị dialog xác nhận
+    private void showConfirmationDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(CartActivity.this);
+        builder.setTitle("Xác nhận đặt hàng");
+        builder.setMessage("Bạn có chắc muốn đặt hàng?");
+
+        builder.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // Lấy thời gian hiện tại để tạo đơn hàng có tên duy nhất
+                String orderKey = String.valueOf(System.currentTimeMillis());
+
+                // Lấy danh sách sản phẩm từ Cart
+                DatabaseReference cartRef = FirebaseDatabase.getInstance().getReference("Cart");
+                cartRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        ArrayList<String> orderedItems = new ArrayList<>();
+                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                            CartModel cartItem = snapshot.getValue(CartModel.class);
+                            if (cartItem != null) {
+                                orderedItems.add(cartItem.getName());
+                            }
+                        }
+
+                        // Tạo bộ dữ liệu cho đơn hàng
+                        DatabaseReference orderRef = FirebaseDatabase.getInstance().getReference("Orders").child(orderKey);
+                        orderRef.child("items").setValue(orderedItems);
+                        orderRef.child("totalAll").setValue(txtTotalAll.getText().toString());
+                        orderRef.child("tax").setValue(txtTax.getText().toString());
+                        orderRef.child("transport").setValue(txtTransport.getText().toString());
+
+                        // Xóa toàn bộ dữ liệu trong Cart
+                        cartRef.removeValue();
+
+                        // Đặt trạng thái của btnCash và btnOtherPayment về false
+                        isCash = false;
+                        isOtherPayment = false;
+
+                        // Đặt màu sắc cho btnCash và btnOtherPayment về mặc định
+                        btnCash.setBackgroundTintList(getResources().getColorStateList(R.color.grey));
+                        btnOtherPayment.setBackgroundTintList(getResources().getColorStateList(R.color.grey));
+
+                        Toast.makeText(CartActivity.this, "Đặt hàng thành công", Toast.LENGTH_SHORT).show();
+
+                        // Gọi hàm để làm mới và cập nhật giao diện
+                        resetUI();
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError error) {
+                        // Failed to read value
+                        Log.w(TAG, "Failed to read value.", error.toException());
+                    }
+                });
+            }
+        });
+
+        builder.setNegativeButton("Hủy bỏ", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // Hủy bỏ đặt hàng, không thực hiện bước tiếp theo
+                dialog.dismiss();
+            }
+        });
+
+        // Hiển thị dialog
+        builder.create().show();
     }
 
 }

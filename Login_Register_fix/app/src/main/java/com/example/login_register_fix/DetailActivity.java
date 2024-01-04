@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
+import com.example.login_register_fix.BottomNavBar.Notification;
 import com.example.login_register_fix.Model.BreakModel;
 import com.example.login_register_fix.Model.ClothesModel;
 import com.example.login_register_fix.Model.DinnerModel;
@@ -638,4 +639,5 @@ public class DetailActivity extends AppCompatActivity {
         objects8 = (DinnerModel) getIntent().getSerializableExtra("objects8");
         objects9 = (FastfoodModel) getIntent().getSerializableExtra("objects9");
     }
+
 }
