@@ -75,7 +75,7 @@
         android:contentDescription="Edit icon"
         app:layout_constraintStart_toEndOf="@+id/lblUserName"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/pen" />
+        app:srcCompat="@drawable/baseline_edit_24" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"

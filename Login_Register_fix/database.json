@@ -1,35 +1,10 @@
 {
   "Account": {
-    "Admin2": {
-      "Email": "Admin2@gmail.com",
-      "FullName": "Pham Phuong Ngoc",
-      "Password": "Admin2",
-      "UserName": "Ngoc Pham"
-    },
-    "Ngoc2003": {
-      "Email": "Ngoc2003@gmail.com",
-      "FullName": "Ngoc",
-      "Password": "Ngoc2003",
-      "UserName": "Ngoc"
-    },
     "admin1": {
-      "Address": "TP.HCM",
       "Email": "admin1@gmail.com",
-      "FullName": "Admin1",
-      "Level": "Diamond Customer",
+      "FullName": "NgocPham",
       "Password": "admin1",
-      "Phone": "123456798",
-      "URL": "",
       "UserName": "admin1"
-    },
-    "appbanhang222": {
-      "Address": "TP.HCM",
-      "Email": "appbanhang222@gmail.com",
-      "FullName": "admin",
-      "Level": "Level of Customer",
-      "Phone": "123456789",
-      "URL": "",
-      "UserName": "Admin"
     }
   },
   "Breakfast": {
@@ -128,6 +103,16 @@
       "name": "Mì Quảng",
       "price": "25,000",
       "start": "4.1"
+    }
+  },
+  "Cart": {
+    "Áo Polo Phối Màu Nam Nữ Unisex , Mặc Đi Học , Đi Chơi": {
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-23020-ffnc8jvofwnvde",
+      "name": "Áo Polo Phối Màu Nam Nữ Unisex , Mặc Đi Học , Đi Chơi",
+      "num": 0,
+      "price": "69,000",
+      "start": "4.9",
+      "total": 0
     }
   },
   "ChillClothes": {
@@ -703,41 +688,26 @@
     }
   },
   "Favorite": {
-    "BVỉ 10 Bút Chì Gỗ 2B HB Học Sinh Deli": {
-      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-litnrxa65nf629",
-      "name": "BVỉ 10 Bút Chì Gỗ 2B HB Học Sinh Deli",
-      "price": "20,000",
-      "start": "4.9"
-    },
     "Bánh mì thịt nướng": {
       "image": "https://beptueu.vn/hinhanh/tintuc/top-15-hinh-anh-mon-an-ngon-viet-nam-khien-ban-khong-the-roi-mat-1.jpg",
+      "lowercasename": "bánh mì thịt nướng",
       "name": "Bánh mì thịt nướng",
       "price": "20,000",
       "start": "4.2"
     },
-    "Ice Bac Xiu": {
-      "image": "https://www.highlandscoffee.com.vn/vnt_upload/product/04_2020/thumbs/270_crop_Bac_Xiu_Da.png",
-      "name": "Ice Bac Xiu",
-      "price": "20,000",
-      "start": "4.2"
+    "Tea Peach": {
+      "image": "https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_TRATHANHDAO.png",
+      "lowercasename": "tea peach",
+      "name": "Tea Peach",
+      "price": "22,000",
+      "start": "4.0"
     },
-    "Notepad mini": {
-      "image": "https://down-vn.img.susercontent.com/file/011c20ea2a1750f1048d03efaf587503",
-      "name": "Notepad mini",
-      "price": "7,000",
-      "start": "4.6"
-    },
-    "Phở bò ": {
-      "image": "https://beptueu.vn/hinhanh/tintuc/top-15-hinh-anh-mon-an-ngon-viet-nam-khien-ban-khong-the-roi-mat-5.jpg",
-      "name": "Phở bò ",
-      "price": "40,000",
-      "start": "4.6"
-    },
-    "Áo khoát Heart chuẩn shop siêu hot-A993": {
-      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lmzijgxpellre2",
-      "name": "Áo khoát Heart chuẩn shop siêu hot-A993",
-      "price": "90,000",
-      "start": "4.5"
+    "Áo Polo Phối Màu Nam Nữ Unisex , Mặc Đi Học , Đi Chơi": {
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-23020-ffnc8jvofwnvde",
+      "lowercasename": "áo polo phối màu nam nữ unisex , mặc đi học , đi chơi",
+      "name": "Áo Polo Phối Màu Nam Nữ Unisex , Mặc Đi Học , Đi Chơi",
+      "price": "69,000",
+      "start": "4.9"
     }
   },
   "Food": {
@@ -1068,36 +1038,10 @@
       "start": "4.1"
     }
   },
-   "Notification": {
-    "1": {
-      "infor": "Cập nhật hệ thống V1.2. Thêm chức năng Notification và Lưu dữ liệu đơn hàng"
-    },
-    "2": {
-      "infor": "Khuyến mãi."
-    },
-    "3": {
-      "infor": "Cập nhật đơn hàng. "
-    },
-    "4": {
-      "infor": "Chia sẻ nhận xét về sản phẩm. "
-    }
-  },
-  "Orders": {
-    "1704266840504": {
-      "items": [
-        "Bánh mì thịt nướng",
-        "Ice Bac Xiu",
-        "Áo Thun Nam In Họa Tiết Đàn Chim Cá Tính Zenkonam MEN TOP 218"
-      ],
-      "tax": "0.0",
-      "totalAll": "320000.0",
-      "transport": "0.0"
-    }
-  },
   "Stationary": {
     "10": {
       "image": "https://down-vn.img.susercontent.com/file/44929358f514c1fa90d4e6a3baeb7f03",
-      "name": "Bút bấm DOMI vintage ngòi  mực đen",
+      "name": "Bút bấm DOMI vintage ngòi 0.5mm mực đen",
       "price": "7,000",
       "start": "4.9"
     },
@@ -1121,7 +1065,7 @@
     },
     "14": {
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lkoirgb5bbtc5a",
-      "name": "Combo 10 Bút gelGuden Stationery",
+      "name": "Combo 10 Bút gel_Guden Stationery",
       "price": "25,000",
       "start": "4.9"
     },
@@ -1247,7 +1191,7 @@
     }
   },
   "Summary": {
-    "total": "22000.0"
+    "total": "0.0"
   },
   "popularproducts": {
     "10": {
@@ -1397,90 +1341,6 @@
       "price": "35,000",
       "start": "4.2"
     },
-    "31": {
-      "image": "https://down-vn.img.susercontent.com/file/011c20ea2a1750f1048d03efaf587503",
-      "lowercasename": "notepad mini",
-      "name": "Notepad mini",
-      "price": "7,000",
-      "start": "4.6"
-    },
-    "32": {
-      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lkoirgb5bbtc5a",
-      "lowercasename": "combo 10 bút gel_guden stationery",
-      "name": "Combo 10 Bút gel_Guden Stationery",
-      "price": "25,000",
-      "start": "4.9"
-    },
-    "33": {
-      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfklriexem4k24",
-      "lowercasename": "băng dính trang trí sổ vintage ",
-      "name": "Băng dính trang trí sổ vintage ",
-      "price": "25,000",
-      "start": "4.6"
-    },
-    "34": {
-      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lld34axjsibs0e",
-      "lowercasename": "sổ ghi chú cầm tay a7 nhỏ gọn tiện lợi happi",
-      "name": "Sổ ghi chú cầm tay A7 nhỏ gọn tiện lợi HAPPI",
-      "price": "19,000",
-      "start": "4.6"
-    },
-    "35": {
-      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-litnrxa65nf629",
-      "lowercasename": "bvỉ 10 bút chì gỗ 2b hb học sinh deli",
-      "name": "BVỉ 10 Bút Chì Gỗ 2B HB Học Sinh Deli",
-      "price": "20,000",
-      "start": "4.9"
-    },
-    "36": {
-      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lgu8i2rkol4j5e",
-      "lowercasename": "hộp 10 bút chì thiên long kèm đầu tẩy",
-      "name": "Hộp 10 Bút chì Thiên Long kèm đầu tẩy",
-      "price": "15,000",
-      "start": "4.9"
-    },
-    "37": {
-      "image": "https://down-vn.img.susercontent.com/file/8840b2ef99bd1802e585a2e3da118ed2",
-      "lowercasename": "gôm tẩy chì m&g miffy màu đen 96313 ",
-      "name": "Gôm tẩy chì M&G Miffy màu đen 96313 ",
-      "price": "3,000",
-      "start": "4.9"
-    },
-    "38": {
-      "image": "https://down-vn.img.susercontent.com/file/96c7aeec217b8ca9a1f32e28c07aba61",
-      "lowercasename": "sổ cornell c-notes ghi bài klong",
-      "name": "Sổ Cornell C-Notes Ghi bài Klong",
-      "price": "45,000",
-      "start": "5.0"
-    },
-    "39": {
-      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lj282fxdtv4iee",
-      "lowercasename": "set 6 bút highlight dạng bấm nhớ dòng đánh dấu màu pastel",
-      "name": "Set 6 bút highlight dạng bấm nhớ dòng đánh dấu màu pastel",
-      "price": "35,000",
-      "start": "4.9"
-    },
-    "40": {
-      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lo48o1rrm0aff3",
-      "lowercasename": "túi đựng bút da pu đa năng soft-more chống nước màu vintage ",
-      "name": "Túi Đựng Bút Da PU Đa Năng Soft-More Chống Nước Màu Vintage ",
-      "price": "30,000",
-      "start": "5.0"
-    },
-    "41": {
-      "image": "https://down-vn.img.susercontent.com/file/98fef5ab4be3ef68d43263f635aaf9b7",
-      "lowercasename": "sổ tay vẽ chì, vẽ artline, màu thạch gouche, màu nước lớp mỏng",
-      "name": "Sổ tay vẽ chì, vẽ artline, màu thạch Gouche, màu nước lớp mỏng",
-      "price": "55,000",
-      "start": "4.9"
-    },
-    "42": {
-      "image": "https://down-vn.img.susercontent.com/file/1658eb4d9b128429d9f0195a87f71d8e",
-      "lowercasename": "ruột bút gel kaco pure 0.5 mm nhiều màu",
-      "name": "Ruột Bút Gel Kaco Pure 0.5 mm Nhiều Màu",
-      "price": "5,000",
-      "start": "4.9"
-    },
     "01": {
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lmzijgxpellre2",
       "lowercasename": "áo khoát heart chuẩn shop siêu hot-a993",
@@ -1543,6 +1403,78 @@
       "name": "Trà phô mai kem sữa",
       "price": "35,000",
       "start": "4.0"
-    }
+    },
+    "31": {
+      "image": "https://down-vn.img.susercontent.com/file/011c20ea2a1750f1048d03efaf587503",
+      "name": "Notepad mini",
+      "price": "7,000",
+      "start": "4.6"
+    },
+    "32": {
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lkoirgb5bbtc5a",
+      "name": "Combo 10 Bút gel_Guden Stationery",
+      "price": "25,000",
+      "start": "4.9"
+    },
+    "33": {
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfklriexem4k24",
+      "name": "Băng dính trang trí sổ vintage ",
+      "price": "25,000",
+      "start": "4.6"
+    },
+    "34": {
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lld34axjsibs0e",
+      "name": "Sổ ghi chú cầm tay A7 nhỏ gọn tiện lợi HAPPI",
+      "price": "19,000",
+      "start": "4.6"
+	},
+    "35": {
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-litnrxa65nf629",
+      "name": "BVỉ 10 Bút Chì Gỗ 2B HB Học Sinh Deli",
+      "price": "20,000",
+      "start": "4.9"
+    },
+    "36": {
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lgu8i2rkol4j5e",
+      "name": "Hộp 10 Bút chì Thiên Long kèm đầu tẩy",
+      "price": "15,000",
+      "start": "4.9"
+    },
+    "37": {
+      "image": "https://down-vn.img.susercontent.com/file/8840b2ef99bd1802e585a2e3da118ed2",
+      "name": "Gôm tẩy chì M&G Miffy màu đen 96313 ",
+      "price": "3,000",
+      "start": "4.9"
+    },
+    "38": {
+      "image": "https://down-vn.img.susercontent.com/file/96c7aeec217b8ca9a1f32e28c07aba61",
+      "name": "Sổ Cornell C-Notes Ghi bài Klong",
+      "price": "45,000",
+      "start": "5.0"
+    },
+    "39": {
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lj282fxdtv4iee",
+      "name": "Set 6 bút highlight dạng bấm nhớ dòng đánh dấu màu pastel",
+      "price": "35,000",
+      "start": "4.9"
+    },
+    "40": {
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lo48o1rrm0aff3",
+      "name": "Túi Đựng Bút Da PU Đa Năng Soft-More Chống Nước Màu Vintage ",
+      "price": "30,000",
+      "start": "5.0"
+    },
+    "41": {
+      "image": "https://down-vn.img.susercontent.com/file/98fef5ab4be3ef68d43263f635aaf9b7",
+      "name": "Sổ tay vẽ chì, vẽ artline, màu thạch Gouche, màu nước lớp mỏng",
+      "price": "55,000",
+      "start": "4.9"
+    },
+    "42": {
+      "image": "https://down-vn.img.susercontent.com/file/1658eb4d9b128429d9f0195a87f71d8e",
+      "name": "Ruột Bút Gel Kaco Pure 0.5 mm Nhiều Màu",
+      "price": "5,000",
+      "start": "4.9"
+	}
   }
 }
